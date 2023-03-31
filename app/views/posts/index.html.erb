@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts hello</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+</div>
+
+<p>This is where all is about <%= @py %></p>
+
+
+<%= link_to "New post", new_post_path %>
